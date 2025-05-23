@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title">Du lịch Bình Định</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.15.1/i18next.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="ico.png" type="image/png">
+  </head>
+  <body>
+    
+<header class="banner">
+  <div class="overlay">
+    <a href="improved-tourism-website.html">
+        <img src="a.png" alt="Bình Định Tourism Logo" />
+      </a>
+    <nav class="nav-links" id="main-nav">
+      <a href="#destinations" data-i18n="header.nav.destination">ĐỊA ĐIỂM DU LỊCH</a>
+      <a href="#hotels" data-i18n="header.nav.hotel">KHÁCH SẠN</a>
+      <a href="#dining" data-i18n="header.nav.dining">ĂN UỐNG</a>
+      <a href="#tours" data-i18n="header.nav.tours">TOUR</a>
+    </nav>
+    <div class="right">
+      <div class="language">
+        <select id="lang" onchange="changeLanguage(this.value)">
+          <option value="vi">Tiếng Việt</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <button data-i18n="header.login">Đăng nhập/Đăng ký</button>
+    </div>
+    <div class="mobile-controls">
+      <button class="mobile-menu-btn" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+    <div class="video-container">
+      <video autoplay muted loop id="my-video">
+        <source src="2(1).mp4" type="video/mp4" />
+      </video>
+      <div class="video-overlay">
+        <h2 data-i18n="hero.title">Khám phá vẻ đẹp Bình Định</h2>
+        <p data-i18n="hero.subtitle">Hãy để chúng tôi dẫn bạn đến những địa điểm tuyệt vời nhất</p>
+        <a href="#destinations" class="cta-button" data-i18n="hero.cta">Khám phá ngay</a>
+      </div>
+    </div>
+
+    <section class="content-section" id="intro">
+      <h2 class="section-title" data-i18n="introduction.title">Giới thiệu về Bình Định</h2>
+      </span>
+      <p class="intro-text" data-i18n="introduction.description">
+        Bình Định là một tỉnh ven biển thuộc vùng duyên hải Nam Trung Bộ của Việt Nam. Với lịch sử hào hùng của vương quốc Champa cổ và quê hương của vua Quang Trung - Nguyễn Huệ, Bình Định không chỉ nổi tiếng với danh hiệu "đất võ trời văn" mà còn là vùng đất với nhiều cảnh đẹp thiên nhiên hùng vĩ, những bãi biển hoang sơ tuyệt đẹp cùng nền ẩm thực phong phú đặc sắc. Từ những di tích lịch sử như tháp Chăm, thành Hoàng Đế đến các khu du lịch biển như Quy Nhơn, Kỳ Co, Eo Gió... Bình Định mang đến cho du khách những trải nghiệm du lịch đa dạng và khó quên.
+      </p>
+      <div class="intro-text" data-i18n="introduction.invitation">
+        Hãy cùng chúng tôi khám phá vùng đất đầy sức hút này qua những địa điểm du lịch nổi tiếng, những món ăn đặc sản và những hoạt động thú vị đang chờ đón bạn tại Bình Định!
+      </div>
+    </section>
+
+    <section class="content-section" id="destinations">
+      <h2 class="section-title" data-i18n="destinations.title">Địa điểm du lịch nổi bật</h2>
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="card-img">
+  <video 
+    width="360" 
+    height="200" 
+    autoplay muted loop playsinline 
+    style="object-fit: fill;">
+    <source src="3.mp4" type="video/mp4" />
+  </video>
+</div>
+
+          <div class="card-content">
+            <h3>Eo Gió</h3>
+            <p>Một trong những địa điểm check-in nổi tiếng nhất Quy Nhơn với cảnh biển tuyệt đẹp và những vách đá hùng vĩ.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <video 
+    width="360" 
+    height="200" 
+    autoplay muted loop playsinline 
+    style="object-fit: fill;">
+    <source src="4.mp4" type="video/mp4" />
+  </video>          </div>
+          <div class="card-content">
+            <h3>Bãi biển Kỳ Co</h3>
+            <p>Được mệnh danh là "Maldives của Việt Nam" với bãi cát trắng mịn, nước biển xanh trong và những vách đá kỳ thú.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <video 
+    width="360" 
+    height="200" 
+    autoplay muted loop playsinline 
+    style="object-fit: fill;">
+    <source src="5.mp4" type="video/mp4" />
+  </video>
+          </div>
+          <div class="card-content">
+            <h3>Tháp Bánh Ít</h3>
+            <p>Di tích lịch sử văn hóa quốc gia với kiến trúc Chăm Pa độc đáo, là chứng tích của một nền văn minh rực rỡ.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+		
+<div class="cta-button-container">
+    <a href="#destinations" class="cta-button" data-i18n="hero.cta">
+      Xem thêm các địa điểm du lịch tại Bình định <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="hotels">
+      <h2 class="section-title" data-i18n="hotels.title">Khách sạn & Lưu trú</h2>
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="6.png" alt="Khách sạn sang trọng" />
+          </div>
+          <div class="card-content">
+            <h3>Khách sạn cao cấp</h3>
+            <p>Những khách sạn 4-5 sao với đầy đủ tiện nghi và dịch vụ sang trọng tại trung tâm thành phố Quy Nhơn.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="7.png" alt="Resort biển" />
+          </div>
+          <div class="card-content">
+            <h3>Resort biển</h3>
+            <p>Những khu nghỉ dưỡng ven biển với không gian riêng tư, hồ bơi và tầm nhìn tuyệt đẹp ra đại dương.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="8.jpg" alt="Homestay" />
+          </div>
+          <div class="card-content">
+            <h3>Homestay</h3>
+            <p>Những homestay xinh xắn với thiết kế độc đáo, giá cả phải chăng và trải nghiệm gần gũi với cuộc sống địa phương.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="dining">
+      <h2 class="section-title" data-i18n="dining.title">Ẩm thực đặc sắc</h2>
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="9.jpg" alt="Bánh xèo" />
+          </div>
+          <div class="card-content">
+            <h3>Bánh xèo tôm nhảy</h3>
+            <p>Món bánh xèo đặc trưng của Bình Định với vỏ bánh giòn rụm và nhân tôm tươi ngon.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="10.jpg" alt="Gỏi cá mai" />
+          </div>
+          <div class="card-content">
+            <h3>Gỏi cá mai</h3>
+            <p>Món gỏi cá biển tươi sống với hương vị chua ngọt đặc trưng, là đặc sản không thể bỏ qua khi đến Quy Nhơn.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="11.png" alt="Bún chả cá" />
+          </div>
+          <div class="card-content">
+            <h3>Bún chả cá</h3>
+            <p>Món bún với nước dùng ngọt thanh từ xương cá và chả cá thơm ngon, là món ăn sáng phổ biến của người dân địa phương.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="cta-button-container">
+    <a href="#destinations" class="cta-button" data-i18n="hero.cta">
+      Khám phá thêm các món ăn đặc sắc tại Bình định <i class="fas fa-arrow-right"></i>
+    </a>
+      </div>
+      
+    </section>
+
+    <section class="content-section" id="tours">
+      <h2 class="section-title" data-i18n="tours.title">Tour du lịch hấp dẫn</h2>
+      <div class="highlights">
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="/api/placeholder/400/300" alt="Tour đảo" />
+          </div>
+          <div class="card-content">
+            <h3>Tour đảo Kỳ Co - Hòn Khô</h3>
+            <p>Khám phá vẻ đẹp hoang sơ của các hòn đảo xung quanh Quy Nhơn với tour đi bộ, lặn biển và thưởng thức hải sản tươi sống.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="/api/placeholder/400/300" alt="Tour văn hóa" />
+          </div>
+          <div class="card-content">
+            <h3>Tour văn hóa Champa</h3>
+            <p>Khám phá các di tích lịch sử và văn hóa của vương quốc Champa cổ tại Bình Định với hướng dẫn viên chuyên nghiệp.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <div class="card-img">
+            <img src="/api/placeholder/400/300" alt="Tour trekking" />
+          </div>
+          <div class="card-content">
+            <h3>Tour trekking núi rừng</h3>
+            <p>Khám phá vẻ đẹp hoang sơ của núi rừng Bình Định với các hoạt động trekking, cắm trại và khám phá thiên nhiên.</p>
+            <a href="#" class="read-more">Xem thêm <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="cta-button-container">
+    <a href="#destinations" class="cta-button" data-i18n="hero.cta">
+      Khám phá thêm các tour du lịch hấp dẫn tại Bình định <i class="fas fa-arrow-right"></i>
+    </a>
+      </div>
+      </div>
+    </section>
+    <section class="content-section" id="testimonials">
+      <h2 class="section-title" data-i18n="testimonials.title">Khách hàng nói gì về chúng tôi</h2>
+      <div class="testimonials">
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <div class="testimonial-text" data-i18n="testimonials.text1">"Chuyến đi đến Bình Định thật tuyệt vời! Tôi đã có những trải nghiệm không thể nào quên."</div>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4 data-i18n="testimonials.name1">Nguyễn Văn A</h4>
+                <p data-i18n="testimonials.position1">Du khách</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-text" data-i18n="testimonials.text2">"Dịch vụ rất tốt, nhân viên thân thiện và nhiệt tình. Tôi sẽ quay lại!"</div>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4 data-i18n="testimonials.name2">Trần Thị B</h4>
+                <p data-i18n="testimonials.position2">Du khách</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-text" data-i18n="testimonials.text3">"Bình Định là một điểm đến lý tưởng cho những ai yêu thích biển và văn hóa."</div>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div class="author-info">
+                <h4 data-i18n="testimonials.name3">Lê Văn C</h4>
+                <p data-i18n="testimonials.position3">Du khách</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    </section>
+    <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <a href="improved-tourism-website.html">
+        <img src="a.png" alt="Bình Định Tourism Logo" />
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.about.title">Về chúng tôi</h3>
+      <p data-i18n="footer.about.description">Chúng tôi là một nhóm đam mê du lịch, mong muốn mang đến cho bạn những trải nghiệm tuyệt vời nhất tại Bình Định.</p>
+     
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.links.title">Liên kết nhanh</h3>
+      <ul class="footer-links">
+        <li><a href="#destinations" data-i18n="footer.links.destinations">Địa điểm du lịch</a></li>
+        <li><a href="#hotels" data-i18n="footer.links.hotels">Khách sạn</a></li>
+        <li><a href="#dining" data-i18n="footer.links.dining">Ẩm thực</a></li>
+        <li><a href="#tours" data-i18n="footer.links.tours">Tour du lịch</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.contact.title">Liên hệ</h3>
+      <p data-i18n="footer.contact.description">Địa chỉ: An Dương Vương, Thành phố Quy Nhơn, Tỉnh Bình Định</p>
+      <p data-i18n="footer.contact.phone">Điện thoại: Thành Toàn: 0857 5673 31<br>Thanh Tú: 0365 7988 34</p>
+      <p data-i18n="footer.contact.email">Email 1: toannguyen.260905@gmail.com</p>
+      <p data-i18n="footer.contact.email">Email 2: tunguyen01022005@gmail.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h3 data-i18n="footer.subscribe.title">Đăng ký nhận bản tin</h3>
+      <p data-i18n="footer.subscribe.description">Nhận thông tin mới nhất về các tour du lịch và ưu đãi đặc biệt.</p>
+      <form class="subscribe-form">
+        <input type="email" class="subscribe-input" placeholder="Nhập email của bạn" required />
+        <button type="submit" class="subscribe-button">Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p data-i18n="footer.copyright">© .</p>
+  </div>
+</footer>
+
+
+  </body>
+</html> 
+          
+
+

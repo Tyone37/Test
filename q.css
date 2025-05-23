@@ -1,0 +1,208 @@
+.banner {
+    border-radius: 0 0 20px 20px; /* trên trái, trên phải, dưới phải, dưới trái */
+    position: relative;
+    width: 100%;
+    height: 110px;
+    background: url('Picture.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+
+/* Blur phủ toàn bộ banner */
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(54, 20, 20, 0.3); /* nền tối trong suốt */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+   
+    color: white;
+}
+
+/* Text trái */
+.left h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.left p {
+    font-style: italic;
+    margin: 5px 0 0;
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+
+.nav-links a {
+    margin: 0 29px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.4s ease;
+}
+
+.nav-links a:hover {
+    
+    color: #ffcc00; /* màu vàng sáng khi hover */
+    /*text-decoration: underline;  gạch chân khi hover */
+}
+
+
+.right {
+    display: flex;
+    align-items: center;    
+    gap: 10px;              
+    font-size: 13px;
+    font-weight: regular;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+
+.buttons {
+  display: flex;
+  gap: 10px; /* khoảng cách giữa hai nút */
+}
+
+.right button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.4s ease;
+  }
+
+  .right button:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Nền sáng nhẹ */
+    transform: scale(1.05);                      /* Phóng to nhẹ */
+    border-color: #ffd700;                       /* Đổi màu viền (vàng) */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3); /* Đổ bóng nhẹ */
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: white;
+    
+    
+}
+
+.language select {
+    background: rgba(255, 255, 255, 0.014); /* nền trong mờ */
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    appearance: none; /* ẩn kiểu mặc định */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.language select:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: white;
+}
+
+.language select option {
+    background-color: #222; /* màu nền dropdown */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Đặt ảnh nền cho toàn bộ trang web */
+body {
+    background: url('Picture1.jpg') no-repeat center center/cover;
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif; /* Bạn có thể thay đổi font ở đây */
+}
+
+/* Đảm bảo toàn bộ trang sẽ có chiều cao đầy đủ */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.buttons {
+  display: flex;
+  gap: 8px; /* khoảng cách giữa 2 nút */
+}
+
+#my-video {
+    position: absolute;      /* Đặt video ở vị trí tuyệt đối */
+    top: 27%;                /* Căn giữa theo chiều dọc */
+    left: 50%;               /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%);  /* Điều chỉnh để video thực sự ở giữa */
+    width: 95%;              /* Đặt chiều rộng video (bạn có thể điều chỉnh tùy ý) */
+    height: 280px;            /* Đảm bảo tỷ lệ video không bị biến dạng */
+    z-index: -1;             /* Đảm bảo video nằm phía dưới các phần tử khác */
+    object-fit: cover; 
+    border-radius: 20px;      /* Đảm bảo video sẽ phủ toàn bộ khu vực mà không bị kéo căng */
+  }
+  
+  /* Ví dụ về phần body hoặc các phần tử khác */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Nếu bạn muốn có nền tối */
+    color: white; /* Màu chữ trắng để nổi bật trên nền tối */
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Kiểu dáng chung cho div chứa mô tả */
+.des {
+    max-width: 900px; /* Chiều rộng tối đa của phần mô tả */
+    margin: 10px auto; /* Canh giữa và tạo khoảng cách từ trên xuống */
+    padding: 20px;
+    border-radius: 12px; /* Bo tròn các góc */
+}
+
+/* Kiểu dáng cho tiêu đề */
+.des h2 {
+    font-size: 28px; /* Kích thước chữ tiêu đề */
+    font-weight: bold;
+    color: #ffffff; /* Màu chữ đậm */
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    text-align: center; /* Canh giữa tiêu đề */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Kiểu dáng cho đoạn văn */
+.des p {
+    font-size: 18px; /* Kích thước chữ đoạn văn */
+    color: #ffffff; /* Màu chữ nhẹ */
+    line-height: 1.6; /* Khoảng cách dòng */
+    text-align: justify; /* Căn đều hai bên */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Kiểu dáng cho đoạn văn có lớp description */
+.description {
+    margin-top: 20px; /* Khoảng cách giữa các đoạn văn */
+    
+    color: #444; /* Màu chữ cho đoạn mô tả */
+    font-size: 16px; /* Kích thước chữ nhỏ hơn */
+}
+
+
+
